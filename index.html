@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+
+<body>
+    <header>
+        <h1>BlueFire Car Styler</h1>
+        <div class="Cart" onclick="toggleCart()">
+            <span id="cart-count">0</span>
+            <img src="bilder/istockphoto-1206806317-612x612.webp" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div class="product">
+            <img src="bilder/Mercedes-S-klass-C217-A217 (webb-shop).webp" alt="mercedes AMG Kit">
+            <h2>Mercedes AMG kit</h2>
+            <p>Mercedes S klass Coupe/Cab 2014-2022 AMG kit</p>
+            <p>Price: 44 990 $</p>
+            <button onclick="addToCart('Mercedes AMG kit', 44990)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="bilder/5st-taklampa-belysning-styling-till-arbetsfordon (webb-shop).webp" alt="light kit 5">
+            <h2>5 Rooflights</h2>
+            <p>5 Rooflights for your car often used on work vehicles</p>
+            <p>Price: 1 199 $</p>
+            <button onclick="addToCart('5 Rooflights', 1199)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="bilder/2023underglow-01.webp" alt="underglow">
+            <h2>Underglow for your car</h2>
+            <p>Easy to put on underglow kit for your car</p>
+            <p>Price: 110 $</p>
+            <button onclick="addToCart('underglow', 110)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="bilder/inside glow.webp" alt="glow kit inside">
+            <h2>Inside glow kit</h2>
+            <p>4st Interiör Billjus, Bil LED-ljus, Biltillbehör, Smart APP-kontroll Med Fjärrkontroll,</p>
+            <p>Price: 15 $</p>
+            <button onclick="addToCart('5 Rooflights', 15)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="bilder/light line.webp" alt="led light line">
+            <h2>Led light line</h2>
+            <p>3 Meter Car Cold Light Line LED Car Atmosphere Lamp Flexibel Inredningsdekoration</p>
+            <p>Price: 11 $</p>
+            <button onclick="addToCart('5 Rooflights', 11)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="bilder/spolier.webp" alt="spolier">
+            <h2>Spolier</h2>
+            <p>VEVOR spoiler 3 kg, vinge spoiler 112x8x13cm</p>
+            <p>Price: 80 $</p>
+            <button onclick="addToCart('5 Rooflights', 80)">Add to Cart</button>
+        </div>
+    </main>
+    <footer>
+        <p>Contact info: BlueFire.CarStyler@gmail.com</p>
+    </footer>
+    <div id="Cart" class="cart-panel">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="total-cost">$0.00</span></p>
+        <buttons>Continue to checkout</buttons>
+        <button onclick="toggleCart()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

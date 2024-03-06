@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+h1{
+    background-color: black;
+    margin-left: 38%;
+    margin-right: 38%;
+}
+
+header {
+    background-image: url(bilder/rsz_fire_wheel-02_590.webp);
+    text-align: center;
+    grid-row: 1;
+    color: rgb(255, 255, 255);
+    margin: 0%;
+    
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    grid-row: 2;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #2d2b2b;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    grid-row: 3;
+}
+
+.Cart {
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.Cart img {
+    width: 30px;
+    height: auto;
+    vertical-align: top;
+    
+    padding-bottom: 0%;
+}
+
+.cart-panel {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 50%;
+    background-color: #8e8e8e;
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.cart-panel h2 {
+    margin-top: 0;
+}
+
+.cart-panel ul {
+    padding: 0;
+    margin: 0;
+}
+
+.cart-panel ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.cart-panel ul li:last-child {
+    border-bottom: none;
+}
+
+.cart-panel buttons{
+    background-color: #0cde1d;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.cart-panel button {
+    background-color: #ff1313;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.cart-panel button:hover {
+    background-color: white;
+}
+
+.cart-panel buttons:hover {
+    background-color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .product {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    .product {
+        width: 100%;
+    }
+}
